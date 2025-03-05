@@ -12,11 +12,6 @@
     --purple-gradient : linear-gradient(to right, #C194FA 0%, #B67AF6 100%);
     --orange-gradient : linear-gradient(to right, #FDB686 0%, #FF9A8D 100%);
     --box-shadow : 1px 1px 3px  rgba(0,0,0,0.1);
-
-}
-
-.open{
-    left : 0px;
 }
 
 .skyblue_gradient{
@@ -127,6 +122,12 @@ body {
             filter: invert(48%) sepia(4%) saturate(1725%) hue-rotate(175deg) brightness(93%) contrast(84%);
         }
     }
+
+    button:hover img{
+        filter : invert(65%) sepia(86%) saturate(259%) hue-rotate(150deg) brightness(83%) contrast(98%);
+
+
+    }
 }
 
 .badge{
@@ -144,6 +145,7 @@ body {
     display: flex;
     align-items: center;
     gap : 10px;
+    cursor : pointer;
 
     img{
         width : 30px;
@@ -166,6 +168,8 @@ body {
         color : var(--gray);
         font-size :14px
     }
+
+   
 }
 
 
@@ -413,6 +417,11 @@ body {
         left : -100%;
         box-shadow: var(--box-shadow);
         width : var(--sidebar-width);
+        transition : left 0.3s ease;
+    }
+
+    .sidebar.open{
+        left : 0;
     }
 
     .header_title{
