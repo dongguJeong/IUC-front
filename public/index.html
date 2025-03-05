@@ -8,25 +8,31 @@
 </head>
 <body>
     <header class="header">
-    <div class="header_title_container">
+    <div class="header_title">
     <h1 >blueBox</h1>
     </div>
-
-    <div class="header_middle">
+    <div class="header_right">
         <div class="header_input">
         <img src="/svg/magnifying.svg"/>
         <input   placeholder="Search Project"/>
         </div>
-        <section class="header_middle_right">
-            <div class="header_middle_right_profile">
+        <section class="header_buttons">
+            <div class="header_buttons_profile">
                 <img src="/svg/picachu.png" />
                 <div><span>정동구</span></div>
+                <img src="/svg/triangle.svg"/>
             </div>
-            <div class="header_middle_right_buttons">
-                <button><img src="/svg/mail.svg"/></button>
-                <button><img src="/svg/bell.svg"/></button>
-                <button><img src="/svg/hamburger.svg"/></button>
-            </div>
+            
+            <button>
+                <img src="/svg/mail.svg"/>
+                <div class="badge"></div>
+            </button>
+            <button>
+                <img src="/svg/bell.svg"/>
+                <div class="badge"></div>
+            </button>
+            <button class="hamburger"><img src="/svg/hamburger.svg"/></button>
+    
         </section>
     </div>
     </header>
@@ -43,82 +49,149 @@
         </div>
         <nav class="sidebar_nav">
             <li>
-                <div>Dashboard</div>
-                <img src="/svg/home.svg"/>
+                <div><span>Dashboard</span></div>
+                <img src="/svg/home.svg" />
             </li>
             <li>
-                <div>UI Elements</div>
-                <div>아이콘</div>
+                <div><span>UI Elements</span></div>
+                <img src="/svg/tools.svg"/>
+            </li>
+            <li>
+                <div><span>Components</span></div>
+                <img src="/svg/components.svg"/>
+            </li>
+            <li>
+                <div><span>Forms Stuff</span></div>
+                <img src="/svg/input.svg"/>
+            </li>
+            <li>
+                <div><span>Data Table</span></div>
+                <img src="/svg/table.svg"/>
+            </li>
+            <li>
+                <div><span>Icons</span></div>
+                <img src="/svg/icons.svg"/>
+            </li>
+            <li>
+                <div><span>Sample Page</span></div>
+                <img src="/svg/desktop.svg"/>
+            </li>
+            <li>
+                <div><span>Extra</span></div>
+                <img src="/svg/file.svg"/>
             </li>
             
         </nav>
-        <button>Add Project</button>
+        <button class="sidebar_button">Add Project</button>
     </aside>
-    <main>
-        <div>
-            <img src="/svg/speed-meter.svg"/>
-        <h1>Dashboard</h1>
-        </div>
 
-        <div>
-            <figure>
+    <main class="main">
+        <section class="main_title">
+            <img src="/svg/speed-meter.svg"/>
+            <h1>Dashboard</h1>
+        </section>
+
+        <section class="main_card_container">
+            <div class="main_card purple_gradient">
                 <div>
                     <img src="/svg/chart.svg"/>
-                    <div>stock Total</div>
-                    <div>$150000</div>
+                    <div class="main_card_title">Stock Total</div>
+                    <div class="main_card_number">$150000</div>
                 </div>
-                <div>
+                <div class="main_card_increased">
                     Increased by 60%
                 </div>
-            </figure>
-            <figure>
+            </div>
+            <div class="main_card blue_gradient">
                 <div>
                     <img src="/svg/database.svg"/>
-                    <div>Total Profit</div>
-                    <div>$25000</div>
+                    <div  class="main_card_title">Total Profit</div>
+                    <div  class="main_card_number">$25000</div>
                 </div>
                 <div>
                     Increased by 30%
                 </div>
-            </figure>
-            <figure>
+            </div>
+            <div class="main_card orange_gradient">
                 <div>
                     <img src="/svg/flag.svg"/>
-                    <div>Unique Visitors</div>
-                    <div>25000</div>
+                    <div  class="main_card_title">Unique Visitors</div>
+                    <div  class="main_card_number">25000</div>
                 </div>
                 <div>
                     Increased by 80%
                 </div>
-            </figure>
-        </div>
+            </div>
+        </section>
 
-        <div>
-
-        <span>Standard Table Design</span>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">User Type</th>
-                    <th scope="col">Joined</th>
-                    <th scope="col">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <th scope="row">정동구</th>
-                <td>donggu@stamper.network</td>
-                <td>인턴</td>
-                <td>04 Mar, 2025</td>
-                <td>happy</td>
-                </tr>   
-            </tbody>
-        </table>
-    </div>
+        <section class="main_table_container">
+            <h1>Standard Table Design</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">User Type</th>
+                        <th scope="col">Joined</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">카리나</th>
+                        <td>aespa@stamper.network</td>
+                        <td>Admin</td>
+                        <td>25 Apr, 2025</td>
+                        <td>
+                            <div class="status pending">PENDING</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">정동구</th>
+                        <td>donggu@stamper.network</td>
+                        <td>인턴</td>
+                        <td>04 Mar, 2025</td>
+                        <td>
+                            <div class="status approved">APPROVED</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">장원영</th>
+                        <td>ive@stamper.network</td>
+                        <td>Subscriber</td>
+                        <td>25 Apr, 2025</td>
+                        <td>
+                            <div class="status approved">APPROVED</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">피카츄</th>
+                        <td>pocketmon@stamper.network</td>
+                        <td>Admin</td>
+                        <td>25 Apr, 2025</td>
+                        <td>
+                            <div class="status reject">REJECT</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">윈터</th>
+                        <td>aespa@stamper.network</td>
+                        <td>Admin</td>
+                        <td>25 Apr, 2025</td>
+                        <td>
+                            <div class="status pending">PENDING</div>
+                        </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </section>
 
     </main>
 </div>
+
+<script src="./app.js"></script>
+
 </body>
 </html>
